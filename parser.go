@@ -16,7 +16,7 @@ import (
 
 var mu sync.Mutex
 
-func init() {
+func main() {
     if (!bool(C.libpostal_setup()) || !bool(C.libpostal_setup_parser())) {
         log.Fatal("Could not load libpostal")
     }
