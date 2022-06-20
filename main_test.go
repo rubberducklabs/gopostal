@@ -1,4 +1,4 @@
-package main
+package gopostal
 
 import (
 	"encoding/json"
