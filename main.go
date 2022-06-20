@@ -1,4 +1,4 @@
-package main
+package gopostal
 
 /*
 #cgo pkg-config: libpostal
