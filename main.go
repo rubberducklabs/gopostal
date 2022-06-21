@@ -16,7 +16,13 @@ import (
 
 var mu sync.Mutex
 
+
 func main() {
+  fmt.Println("gopostal main")
+}
+
+func init() {
+    fmt.Println("Init")
     if (!bool(C.libpostal_setup()) || !bool(C.libpostal_setup_parser())) {
         log.Fatal("Could not load libpostal")
     }
