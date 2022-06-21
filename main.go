@@ -24,7 +24,7 @@ func main() {
 
 func init() {
     fmt.Println("Init")
-    if (!bool(C.libpostal_setup()) || !bool(C.libpostal_setup_parser())) {
+    if (!bool(C.libpostal_setup()) || !bool(C.libpostal_setup_parser()) || !bool(C.libpostal_setup_language_classifier()) {
         log.Fatal("Could not load libpostal")
     }
 }
