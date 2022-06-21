@@ -12,6 +12,7 @@ import (
     "sync"
     "unsafe"
     "unicode/utf8"
+    "fmt"
 )
 
 var mu sync.Mutex
